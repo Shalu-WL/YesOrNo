@@ -1,9 +1,7 @@
 const noBtn = document.getElementById("noBtn");
+const card = document.querySelector(".card");
 
-noBtn.addEventListener("mouseover", function(){
-
-    const card = document.querySelector(".card");
-
+function moveButton() {
     const maxX = card.clientWidth - noBtn.clientWidth;
     const maxY = card.clientHeight - noBtn.clientHeight;
 
@@ -12,7 +10,9 @@ noBtn.addEventListener("mouseover", function(){
 
     noBtn.style.left = randomX + "px";
     noBtn.style.top = randomY + "px";
-});
+}
+noBtn.addEventListener("mouseover", moveButton);
+noBtn.addEventListener("touchstart", moveButton);
 
 function goNext() {
     window.location.href = "NextPage.html";
