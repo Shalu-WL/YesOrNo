@@ -131,8 +131,6 @@ body::before {
 /* 75% Width Card */
 .video-card {
     width: 75%;
-    /* 👈 75% of page */
-    height: 85%;
     background: white;
     border-radius: 40px;
     padding: 30px;
@@ -178,7 +176,7 @@ video {
     border-radius: 40px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
     animation: pop 2s infinite;
-    width: 60%;
+    width: 80%;
 }
 
 /* Image Style */
@@ -198,7 +196,9 @@ video {
 }
 
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
+    .video-card {
+        width: 90%;
+        padding: 20px;
+        border-radius: 25px;
     }
 }
